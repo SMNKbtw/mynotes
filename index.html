@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="SMNK"/>
+    <meta name="descriptiom" content="Notes"/>
+    <title>Нотатник</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Notes</h1>
+        <input type="text" title="Click to write" id="noteInput" placeholder="Type note here...">
+        <button title="Click to save" onclick="saveNotes()">Save Note</button>
+
+        <div class="saved-notes" id="savedNotes">
+            <p id="emptyNotesText">No notes</p>
+            <ol id="notesList">
+                <!-- Notes will be appended here -->
+            </ol>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
